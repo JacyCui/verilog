@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Verilog教程', // 网站标题
-    description: '基于Verilog的芯片设计教程', // 网站描述
+    title: 'Verilog学习笔记', // 网站标题
+    description: '基于Verilog的芯片设计学习笔记', // 网站描述
 
     // 插入html头
     head: [
@@ -70,51 +70,75 @@ module.exports = {
         navbar: true, // 启用导航栏
         nav: [ // 导航栏内容设置
             {
-                text: '目录',
+                text: '导论',
                 items: [
-                    {
-                        text: '导论',
-                        items: [
-                            {text: 'Verilog是什么？', link: '/1-1-what-is-verilog/'},
-                            {text: 'Verilog引入', link: '/1-2-introduction-to-verilog/'},
-                            {text: '芯片的设计流程', link: '/1-3-chip-design-flow/'},
-                            {text: '芯片的抽象层次', link: '/1-4-chip-abstraction-layers/'}
-                        ]
-                    },
-                    {
-                        text: '数据类型',
-                        items: [
-                            {text: 'Verilog 语法', link: '/2-1-syntax/'},
-                            {text: 'Verilog 数据类型', link: '/2-2-data-types/'},
-                            {text: 'Verilog 标量与向量', link: '/2-3-scalar-and-vector/'},
-                            {text: 'Verilog 数组与内存', link: '/2-4-array/'}
-                        ]
-                    },
-                    {
-                        text: '块构建',
-                        items: [
-                            {text: 'Verilog 模块', link: '/3-1-module/'},
-                            {text: 'Verilog 端口', link: '/3-2-ports/'},
-                            {text: 'Verilog 模块实例化', link: '/3-3-module-instantiation/'},
-                            {text: 'Verilog assign语句', link: '/3-4-assign-statement/'},
-                            {text: 'assign 与组合逻辑', link: '/3-5-assign-examples/'},
-                            {text: 'Verilog 操作符', link: '/3-6-operator/'},
-                            {text: 'Verilog 拼接', link: '/3-7-concatenation/'},
-                            {text: 'Verilog always语句块', link: '/3-8-always-block/'},
-                            {text: 'always 语句块与组合逻辑', link: '/3-9-combinational-logic-with-always/'},
-                            {text: 'always 语句块与时序逻辑', link: '/3-10-sequential-logic-with-always/'},
-                            {text: 'Verilog initial 语句块', link: '/3-11-initial-block/'},
-                            {text: 'Verilog 简而言之', link: '/3-12-in-a-nut-shell/'},
-                            {text: 'Verilog generate 语句块', link: '/3-13-generate-block/'},
-                            {text: 'Verilog 检测器', link: '/3-14-detector/'}
-                        ]
-                    },
-                    {
-                        text: '行为建模',
-                        items: [
-                            {text: 'Verilog 块语句', link: '/4-1-block-statements/'}
-                        ]
-                    }
+                    {text: 'Verilog是什么？', link: '/1-1-what-is-verilog/'},
+                    {text: 'Verilog引入', link: '/1-2-introduction-to-verilog/'},
+                    {text: '芯片的设计流程', link: '/1-3-chip-design-flow/'},
+                    {text: '芯片的抽象层次', link: '/1-4-chip-abstraction-layers/'}
+                ]
+            },
+            {
+                text: '数据类型',
+                items: [
+                    {text: 'Verilog 语法', link: '/2-1-syntax/'},
+                    {text: 'Verilog 数据类型', link: '/2-2-data-types/'},
+                    {text: 'Verilog 标量与向量', link: '/2-3-scalar-and-vector/'},
+                    {text: 'Verilog 数组与内存', link: '/2-4-array/'}
+                ]
+            },
+            {
+                text: '块构建',
+                items: [
+                    {text: 'Verilog 模块', link: '/3-1-module/'},
+                    {text: 'Verilog 端口', link: '/3-2-ports/'},
+                    {text: 'Verilog 模块实例化', link: '/3-3-module-instantiation/'},
+                    {text: 'Verilog assign语句', link: '/3-4-assign-statement/'},
+                    {text: 'assign 与组合逻辑', link: '/3-5-assign-examples/'},
+                    {text: 'Verilog 操作符', link: '/3-6-operator/'},
+                    {text: 'Verilog 拼接', link: '/3-7-concatenation/'},
+                    {text: 'Verilog always语句块', link: '/3-8-always-block/'},
+                    {text: 'always 语句块与组合逻辑', link: '/3-9-combinational-logic-with-always/'},
+                    {text: 'always 语句块与时序逻辑', link: '/3-10-sequential-logic-with-always/'},
+                    {text: 'Verilog initial 语句块', link: '/3-11-initial-block/'},
+                    {text: 'Verilog 简而言之', link: '/3-12-in-a-nut-shell/'},
+                    {text: 'Verilog generate 语句块', link: '/3-13-generate-block/'},
+                    {text: 'Verilog 检测器', link: '/3-14-detector/'}
+                ]
+            },
+            {
+                text: '行为建模',
+                items: [
+                    {text: 'Verilog 块语句', link: '/4-1-block-statements/'},
+                    {text: 'Verilog 赋值', link: '/4-2-assignments/'},
+                    {text: 'Verilog 阻塞/非阻塞', link: '/4-3-blocking-non-blocking/'},
+                    {text: 'Verilog 控制流', link: '/4-4-control-flow/'},
+                    {text: 'Verilog for循环', link: '/4-5-for-loop/'},
+                    {text: 'Verilog case 语句', link: '/4-6-case-statement/'},
+                    {text: 'Verilog 函数', link: '/4-7-function/'},
+                    {text: 'Verilog 任务', link: '/4-8-task/'},
+                    {text: 'Verilog 参数', link: '/4-9-parameter/'},
+                    {text: 'Verilog 条件编译', link: '/4-10-conditional-compilation/'},
+                    {text: 'Verilog 延迟控制', link: '/4-11-delay-control/'},
+                    {text: 'Verilog 赋值内/赋值间延迟', link: '/4-12-inter-intra-delay/'},
+                    {text: 'Verilog 层级引用域', link: '/4-13-hierarchical-reference/'}
+                ]
+            },
+            {
+                text: '门级/开关级建模',
+                items: [
+                    {text: 'Verilog 门级建模', link: '/5-1-gate-level-modeling/'},
+                    {text: 'Verilog 门级示例', link: '/5-2-gate-level-examples/'},
+                    {text: 'Verilog 门级延迟', link: '/5-3-gate-delay/'},
+                    {text: 'Verilog 开关级建模', link: '/5-4-switch-level-modeling/'},
+                    {text: 'Verilog 用户自定义原语', link: '/5-5-user-defined-primitives/'}
+                ]
+            },
+            {
+                text: '模拟仿真',
+                items: [
+                    {text: 'Verilog 模拟基础', link: '/6-1-simulation-basics/'},
+                    {text: 'Verilog 时间尺度', link: '/6-2-timescale/'}
                 ]
             },
             { text: '笔者博客', link: 'https://blog.cuijiacai.com' },
@@ -179,7 +203,43 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    '/4-1-block-statements/'
+                    '/4-1-block-statements/',
+                    '/4-2-assignments/',
+                    '/4-3-blocking-non-blocking/',
+                    '/4-4-control-flow/',
+                    '/4-5-for-loop/',
+                    '/4-6-case-statement/',
+                    '/4-7-function/',
+                    '/4-8-task/',
+                    '/4-9-parameter/',
+                    '/4-10-conditional-compilation/',
+                    '/4-11-delay-control/',
+                    '/4-12-inter-intra-delay/',
+                    '/4-13-hierarchical-reference/'
+                ]
+            },
+            {
+                title: '门级建模',   
+                // path: '/11-ifds/',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    '/5-1-gate-level-modeling/',
+                    '/5-2-gate-level-examples/',
+                    '/5-3-gate-delay/',
+                    '/5-4-switch-level-modeling/',
+                    '/5-5-user-defined-primitives/'
+                    
+                ]
+            },
+            {
+                title: '模拟仿真',   
+                // path: '/11-ifds/',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    '/6-1-simulation-basics/',
+                    '/6-2-timescale/'
                 ]
             }
             // ['/demo', 'Explicit link text'], // 显示地指定文字

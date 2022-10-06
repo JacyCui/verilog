@@ -1,8 +1,8 @@
 ---
 home: true # 主页
 heroImage: /cover.svg # 主页大图
-heroText: Verilog教程 # 主页标题
-tagline: 基于Verilog的芯片设计教程 # 主页副标题
+heroText: Verilog学习笔记 # 主页标题
+tagline: 基于Verilog的芯片设计学习笔记 # 主页副标题
 actionText: 开始学习 → # 主页按钮文字
 actionLink: /preface/ # 主页按钮链接
 # navbar: true # 启用导航栏
